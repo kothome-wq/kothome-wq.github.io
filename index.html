@@ -146,6 +146,12 @@ section.block{padding:72px 0;border-top:1px solid var(--line)}
 footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,140%);background:var(--ink);color:#fff;padding:14px 20px;border-radius:14px;font-size:15px;z-index:50;transition:transform .35s cubic-bezier(.2,.8,.2,1),visibility .35s;max-width:calc(100% - 32px);visibility:hidden}
 .toast.show{transform:translate(-50%,0);visibility:visible}
+.why-sub{font:600 18px/1.3 var(--display);margin:0 0 18px}
+.fears{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.fears li{display:grid;gap:6px 30px;padding:20px 0;border-bottom:1px solid var(--line)}
+@media (min-width:760px){.fears li{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);align-items:baseline}}
+.fears h3{font-size:19px;line-height:1.25}
+.fears p{margin:0;color:var(--ink-2)}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
@@ -167,6 +173,19 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
       <div class="facts" id="facts"></div>
     </div>
     <div class="fan" id="fan" aria-label="Мои работы"></div>
+  </section>
+
+  <section class="block" id="why">
+    <div class="block-head reveal"><div><div class="eyebrow">Зачем сайт</div><h2>Карточка приводит клиента, сайт его убеждает</h2></div><p>Прежде чем позвонить, человек хочет понять: сколько стоит, как вы работаете, можно ли вам доверять. Карточка на Картах на это не отвечает. Без сайта он уходит к соседу, у которого всё понятно с первого экрана.</p></div>
+    <p class="why-sub reveal">Почему у многих сайта до сих пор нет - и что я с этим делаю</p>
+    <ul class="fears reveal">
+      <li><h3>«Это дорого»</h3><p>Одностраничник - от 15 000 ₽. Демо вашего сайта показываю бесплатно: платите, только если понравилось.</p></li>
+      <li><h3>«Некогда этим заниматься»</h3><p>Собираю сайт сам по вашей карточке: услуги, цены, отзывы, фото. От вас - посмотреть и сказать, что поправить.</p></li>
+      <li><h3>«Не знаю, что о себе написать»</h3><p>Я копирайтер. Тексты строю на том, за что вас уже хвалят клиенты в отзывах.</p></li>
+      <li><h3>«Купить кота в мешке»</h3><p>Сначала вы видите готовое демо на своём телефоне, а решаете потом.</p></li>
+      <li><h3>«Сделают и пропадут»</h3><p>Новые цены, фото и правки - пишете мне в мессенджер, я вношу.</p></li>
+      <li><h3>«Клиенты и так находят по Картам»</h3><p>Сайт не заменяет карточку, а дожимает: ссылка стоит в той же карточке, и тот, кто сомневается, получает ответы.</p></li>
+    </ul>
   </section>
 
   <section class="block" id="works">
