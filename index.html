@@ -152,6 +152,10 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
 @media (min-width:760px){.fears li{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);align-items:baseline}}
 .fears h3{font-size:19px;line-height:1.25}
 .fears p{margin:0;color:var(--ink-2)}
+.edge{margin-top:40px;background:var(--soft);border-radius:var(--r);padding:28px 24px}
+@media (min-width:760px){.edge{padding:40px 44px}}
+.edge-lead{font:600 clamp(20px,2.4vw,26px)/1.25 var(--display);margin:12px 0 12px}
+.edge p:last-child{margin:0;color:var(--ink-2);max-width:68ch}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
@@ -181,11 +185,12 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
     <ul class="fears reveal">
       <li><h3>«Это дорого»</h3><p>Одностраничник - от 15 000 ₽. Демо вашего сайта показываю бесплатно: платите, только если понравилось.</p></li>
       <li><h3>«Некогда этим заниматься»</h3><p>Собираю сайт сам по вашей карточке: услуги, цены, отзывы, фото. От вас - посмотреть и сказать, что поправить.</p></li>
-      <li><h3>«Не знаю, что о себе написать»</h3><p>Я копирайтер. Тексты строю на том, за что вас уже хвалят клиенты в отзывах.</p></li>
+      <li><h3>«Не знаю, что о себе написать»</h3><p>Это моя работа: тексты пишу сам, из ваших отзывов и карточки.</p></li>
       <li><h3>«Купить кота в мешке»</h3><p>Сначала вы видите готовое демо на своём телефоне, а решаете потом.</p></li>
       <li><h3>«Сделают и пропадут»</h3><p>Новые цены, фото и правки - пишете мне в мессенджер, я вношу.</p></li>
       <li><h3>«Клиенты и так находят по Картам»</h3><p>Сайт не заменяет карточку, а дожимает: ссылка стоит в той же карточке, и тот, кто сомневается, получает ответы.</p></li>
     </ul>
+    <div class="edge reveal"><div class="eyebrow">В чём разница</div><p class="edge-lead">Я копирайтер и маркетолог, а не просто верстальщик.</p><p>Обычно сайт малого бизнеса собирают из общих фраз: «индивидуальный подход», «качество и доступные цены». Так пишут все, и клиент их не замечает. Я сначала читаю ваши отзывы и нахожу, за что люди выбирают именно вас: «цена после осмотра не меняется», «мастер один, и к нему едут годами». На этом строю заголовок и предложение, поэтому оно бьёт точно в то, что важно вашим клиентам.</p></div>
   </section>
 
   <section class="block" id="works">
