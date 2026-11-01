@@ -146,6 +146,11 @@ section.block{padding:72px 0;border-top:1px solid var(--line)}
 footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,140%);background:var(--ink);color:#fff;padding:14px 20px;border-radius:14px;font-size:15px;z-index:50;transition:transform .35s cubic-bezier(.2,.8,.2,1),visibility .35s;max-width:calc(100% - 32px);visibility:hidden}
 .toast.show{transform:translate(-50%,0);visibility:visible}
+.gains{list-style:none;margin:0 0 56px;padding:0;display:grid;gap:26px 40px}
+@media (min-width:760px){.gains{grid-template-columns:1fr 1fr}}
+.gains li{border-left:3px solid var(--accent);padding:2px 0 2px 18px}
+.gains h3{font-size:19px;line-height:1.25}
+.gains p{margin:6px 0 0;color:var(--ink-2)}
 .why-sub{font:600 18px/1.3 var(--display);margin:0 0 18px}
 .fears{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .fears li{display:grid;gap:6px 30px;padding:20px 0;border-bottom:1px solid var(--line)}
@@ -180,7 +185,15 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   </section>
 
   <section class="block" id="why">
-    <div class="block-head reveal"><div><div class="eyebrow">Зачем сайт</div><h2>Карты и соцсети приводят клиента, сайт его убеждает</h2></div><p>Прежде чем позвонить, человек хочет понять: сколько стоит, как вы работаете, можно ли вам доверять. Ни карточка на Картах, ни лента в соцсетях на это толком не отвечают. Без сайта он уходит к соседу, у которого всё понятно с первого экрана.</p></div>
+    <div class="block-head reveal"><div><div class="eyebrow">Зачем сайт</div><h2>Карты и соцсети приводят клиента, сайт его убеждает</h2></div><p>Карточка и страница в соцсетях - хорошее начало. Сайт добавляет то, чего они не дают.</p></div>
+    <ul class="gains reveal">
+      <li><h3>Вас находят через поиск</h3><p>Сайт попадает в Яндекс и Google - к вам приходят и те, кто не открывал Карты и не подписан на ваши соцсети.</p></li>
+      <li><h3>Ответы до звонка</h3><p>Цены, услуги, как вы работаете - клиент видит всё сразу и звонит уже готовым заказать, а не «просто спросить».</p></li>
+      <li><h3>Заявки без звонков</h3><p>Форма и кнопка мессенджера разгружают телефон: заявки приходят в WhatsApp или Telegram, даже ночью и в выходные.</p></li>
+      <li><h3>Солидно</h3><p>Свой сайт показывает, что бизнес настоящий и всерьёз. Компаниям проще с вами работать, а клиентам - платить больше.</p></li>
+      <li><h3>Площадка, которая принадлежит вам</h3><p>Соцсеть могут заблокировать или урезать охваты, карточку - испортить чужим отзывом. Сайт остаётся вашим.</p></li>
+      <li><h3>Одна ссылка для всего</h3><p>Для рекламы, визитки, объявления на Авито и подписи в мессенджере - одна понятная ссылка, где всё о вас.</p></li>
+    </ul>
     <p class="why-sub reveal">Почему у многих сайта до сих пор нет - и как это решается</p>
     <ul class="fears reveal">
       <li><h3>«Это дорого»</h3><p>Одностраничник - от 15 000 ₽. Демо вашего сайта показываю бесплатно: платите, только если понравилось.</p></li>
